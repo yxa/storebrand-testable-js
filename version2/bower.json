@@ -1,0 +1,25 @@
+{
+  "name": "version2",
+  "version": "0.0.0",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "components"
+  ],
+  "dependencies": {
+    "requirejs": "*",
+    "requirejs-text": "latest",
+    "jquery": "latest",
+    "underscore": "latest",
+    "jquery-simulate": "*",
+    "rsvp": "~2.0.1"
+  },
+  "devDependencies": {
+    "mocha": "latest",
+    "chai": "latest",
+    "chai-jquery": "latest",
+    "chai-backbone": "latest",
+    "sinon": "http://sinonjs.org/releases/sinon-1.7.1.js",
+    "squire": "latest"
+  }
+}

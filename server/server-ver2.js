@@ -1,6 +1,6 @@
 var express   = require( 'express' );
 var Faker     = require( 'Faker' );
-var _         = require( 'underscore' )
+var _         = require( 'underscore' );
 var app       = express( express.bodyParser() );
 var baseDir   = __dirname + '/../';
 
@@ -27,10 +27,7 @@ app.get( '/data/search.json', function(req, res) {
     });
   }
 
-  // simulate latency
-  setTimeout(function() {
-    res.end(JSON.stringify({ results : results }));
-  }, 500);
+  res.end(JSON.stringify({ results : results }));
 });
 
 app.use( '/test', express.static( baseDir + 'test') );

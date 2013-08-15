@@ -22,14 +22,13 @@
     "grunt-preprocess": "~2.3.0",
     "grunt-contrib-concat": "~0.3.0",
     "grunt-cli": "~0.1.9",
-    "grunt-mocha-phantomjs": "~0.3.0"
+    "grunt-mocha-phantomjs": "~0.3.0",
+    "grunt-mocha": "~0.3.4"
   },
   "scripts": {
     "test": "grunt test",
     "start-server1": "node ./server/server-ver1.js",
-    "start-server2": "node ./server/server-ver2.js",
-    "predeploy": "echo This will be run before deploying the app",
-    "postdeploy": "echo This will be run after deploying the app"
+    "start-server2": "node ./server/server-ver2.js"
   },
   "repository": {
     "type": "git",
@@ -47,6 +46,7 @@
     "colors": "~0.6.0-1",
     "cli-table": "~0.2.0",
     "commander": "~1.2.0",
-    "Faker": "0.5.x"
+    "Faker": "0.5.x",
+    "prettyjson": "~0.8.1"
   }
 }

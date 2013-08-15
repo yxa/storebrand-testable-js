@@ -1,5 +1,33 @@
+<!doctype html>
 <html>
-  <body>
-      <h1>TEST</h1>
-  </body>
-</html>
+<head>
+    <meta charset="utf-8">
+    <title>Storebrand</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/css/bootstrap.min.css">
+    <link href="main.css" rel="stylesheet">
+  </head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8">
+        <form id="searchForm" class="form-inline well">
+          <input type="text" name="q" class="form-control">
+          <button type="submit" class="btn btn-default">Search</button>
+        </form>
+        <ul id="results">
+          <li class="no-results">There are no results yet.</li>
+        </ul>
+      </div>
+      <div class="col-lg-4">
+        <div class="well">
+          <h3>Liked</h3>
+          <ul id="liked">
+            <li class="no-results">You haven't liked anything yet.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+ <script data-main="js/config.js" src="bower_components/requirejs/require.js"></script>
+</body>
