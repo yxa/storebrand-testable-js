@@ -13,3 +13,6 @@ results
 
 npm-debug.log
 node_modules/
+test/unit/fixtures/templates.js
+.DS_Store
+version2/bower_components/

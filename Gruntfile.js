@@ -5,13 +5,34 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON('package.json'),
 
     mocha_phantomjs: {
-      all: ['test/unit/index.html']
+      all: [ 'test/unit/index.html' ]
     },
 
-    mocha: {
-      index: [ 'test/unit/index.html']
+    watch: {
+      files: [ 'version2/templates/*.tmpl' ],
+      tasks: 'default'
+    },
+    jshint: {
+      all: [ 'version2/js/**/*.js' ],
+      options: {
+        curly: true,
+        eqeqeq: true,
+        immed: true,
+        latedef: true,
+        newcap: true,
+        noarg: true,
+        sub: true,
+        undef: true,
+        boss: true,
+        eqnull: true,
+        browser: true,
+          globals: {
+          define: true,
+          require: true,
+          sinon: true
+        }
+      }
     }
-
   });
 
 
@@ -35,7 +56,7 @@ module.exports = function(grunt) {
     grunt.file.write('test/unit/fixtures/templates.js', src);
   });
 
-  grunt.registerTask('default', ['test']);
-  grunt.registerTask('test', ['fixtures', 'mocha_phantomjs']);
+  grunt.registerTask('default', [ 'test' ]);
+  grunt.registerTask('test', [ 'fixtures', 'jshint', 'mocha_phantomjs' ]);
 
 };
