@@ -22,8 +22,7 @@
     "grunt-preprocess": "~2.3.0",
     "grunt-contrib-concat": "~0.3.0",
     "grunt-cli": "~0.1.9",
-    "grunt-mocha-phantomjs": "~0.3.0",
-    "grunt-mocha": "~0.3.4"
+    "grunt-mocha-phantomjs": "~0.3.0"
   },
   "scripts": {
     "test": "grunt test",
@@ -32,7 +31,7 @@
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/yxa/storebrand-testable-js.git"
   },
   "author": "",
   "license": "BSD",
@@ -42,10 +41,6 @@
   "dependencies": {
     "express": "3.x",
     "underscore": "~1",
-    "http-proxy": "~0.10.3",
-    "colors": "~0.6.0-1",
-    "cli-table": "~0.2.0",
-    "commander": "~1.2.0",
     "Faker": "0.5.x",
     "prettyjson": "~0.8.1"
   }

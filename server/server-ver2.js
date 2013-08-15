@@ -30,8 +30,6 @@ app.get( '/data/search.json', function(req, res) {
   res.end(JSON.stringify({ results : results }));
 });
 
-app.use( '/test', express.static( baseDir + 'test') );
-
 app.listen( 4000 );
 
 console.log( 'Serving on http://localhost:4000' );
